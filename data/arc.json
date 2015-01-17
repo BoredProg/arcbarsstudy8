@@ -1,0 +1,16 @@
+{"ArcBars" : 
+	[
+		{ 	radiusSmall 	: 50 		, 
+			radiusBig 		: 500		, 
+			elevation 		: 0.01		, 
+			height 			: 0.1		, 
+			angleStart		: 360		,
+			angleEnd		: 250		,
+			rotateClocWise	: true		,
+			rotationSpeed	: 0.5 		,
+			color			: "0.1,0.1,0.1,1.0",
+
+		}
+	]
+}
+
