@@ -1,3 +1,9 @@
+/*
+HEADER
+
+*/
+
+
 import processing.opengl.*;
 import processing.core.*;
 
@@ -242,8 +248,3 @@ public void initLights()
   gl.glEnable(GL2.GL_LIGHT0);
   gl.glEnable(GL2.GL_LIGHT1);
 }
-
-
-
-
-
