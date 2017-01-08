@@ -9,11 +9,11 @@ import processing.core.*;
 
 import toxi.geom.Vec3D;
 
-import javax.media.opengl.GL;  
+import com.jogamp.opengl.GL;  
 
 
-import javax.media.opengl.*;
-import javax.media.opengl.glu.GLU;
+import com.jogamp.opengl.*;
+import com.jogamp.opengl.glu.GLU;
 import com.jogamp.opengl.util.gl2.GLUT;
 
 import java.nio.ByteBuffer;
@@ -111,7 +111,11 @@ void draw()
 void initOpenGL ()
 {
   pgl = (PJOGL)beginPGL();
-  gl = GLU.getCurrentGL().getGL2();
+  
+  // euh ... non of these works ??
+  //gl = GLU.getCurrentGL().gl;
+  //gl =((PJOGL)beginPGL()).gl.getGL2();
+  endPGL();
   
   gl.setSwapInterval( 1 );
 
